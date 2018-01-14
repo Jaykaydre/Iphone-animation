@@ -1,0 +1,163 @@
+.limbox{
+margin:40px auto;
+width:100%;
+height:100%;
+}
+.box{
+   align-self:flex-end;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+   animation-delay:2s;
+   width:20px;
+   height:100px;
+   transform-origin:bottom;
+   background-color:red;
+   margin-left:30px;
+   float:left;
+   
+}
+.boxs{
+   align-self:flex-end;  
+   width:10px;
+   height:100px;
+   transform-origin:bottom;
+   background-color:blue;
+   margin 0 auto;
+   float:left;
+   margin-left:10px;
+   transform:rotateZ(20deg);
+}
+.ball{
+   align-self:flex-end;
+   animation-duration:4s;
+   animation-iteration-count:infinite;   
+   width:70px;
+   height:70px;
+   border-radius:200px;
+   transform-origin:bottom;
+   background-color:green;
+   float:left;
+   margin-left:30px;
+   margin-top:20px;
+}
+.mobile{
+   animation-duration:5s;
+   animation-iteration-count:infinite;
+   width:200px;
+   height:420px;
+   background-color:white;
+   box-shadow:2px 2px 20px 2px silver;
+   border-radius:17px;
+   border:1px solid white;
+
+   margin:100px auto;
+   
+   text-align:center;
+}.ear{
+  width:50px;
+  height:5px;
+  background-color:silver;
+  border:1px inset gray;
+  border-radius:6px;
+  margin:6px auto;
+}
+.sencor{
+  width:5px;
+  height:5px;
+  background-color:silver;
+  border:1px solid gray;
+  border-radius:20px;
+  margin:-13px 0 0 63px;
+}
+.frontcam{
+  width:5px;
+  height:5px;
+  background-color:silver;
+  border:1px inset gray;
+  border-radius:20px;
+  margin:4px auto;
+}
+.screen{
+   width:180px;
+   height:330px;
+   border:1px solid silver;
+   background-color:white;
+   border-radius:6px;
+   margin:10px auto;
+   text-align:center;
+}.adds{
+   font-size:2.0em;
+   font-family:sans-serif;
+}.blue{
+   color:blue;
+}.green{
+  color:green;
+}
+.red{
+  color:red;
+}
+.yellow{
+  color:yellow;
+}i{
+  font-size:0.2em!important;
+  text-shadow:1px 2px silver;
+  color:blue;
+}
+.home{
+   width:40px;
+   height:40px;
+   border:2px inset silver;
+   background-color:white;
+   margin-top:-6px;
+   border-radius:100px;
+}
+.bouncer{
+   animation-name:bounce;
+   animation-timing-function:ease;
+}
+
+.bounce{
+   animation-name:bounceball;
+   animation-timing-function:ease;
+}
+.device{
+   animation-name:device;
+   animation-timing-function:ease;
+}
+
+
+
+@keyframes bounce{
+0%{transform:scale(1,1) translateY(0);}
+10%{transform:scale(1.1,.9) translateY(0);}
+30%{transform:scale(.9,1.1) translateY(-70px) rotateZ(-20deg);}
+50%{transform:scale(1.1,.9) translateY(0);}
+60%{transform:scale(.9,1.1) translateY(-70px) rotateZ(20deg);}
+80%{transform:scale(1.1,.9) translateY(0);}
+100%{transform:scale(1,1) translateY(0);}
+}
+
+@keyframes bounceball{
+0%{transform:scale(1,1) translateY(0);}
+10%{transform:scale(1.1,.9) translateY(0);}
+30%{transform:scale(.9,1.1) translateY(0);}
+50%{transform:scale(1.1,.9) translateY(0);}
+60%{transform:scale(.9,1.1) translateY(0);}
+80%{transform:scale(1.1,.9) translateY(0);}
+100%{transform:scale(.9,1.1) translateY(0);}
+}
+
+@keyframes device{
+0%{transform:translateY(0);}
+10%{transform:translateY(-10px);}
+20%{transform:translateY(-20px);}
+30%{transform:translateY(-30px);}
+40%{transform:translateY(-40px);}
+50%{transform:translateY(-50px);}
+60%{transform:translateY(-50px);}
+70%{transform:translateY(-40px);}
+80%{transform:translateY(-30px);}
+90%{transform:translateY(-20px);}
+95%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
